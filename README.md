@@ -123,4 +123,53 @@ Final Vagrantfile for testbox01
 Here are the contents of the linuxclass/testbox01/Vagrantfile file with all the comments removed. 
 Vagrant.configure(2) do |config| config.vm.box = "jasonc/centos8" config.vm.hostname = "testbox01" 
 config.vm.network "private_network", ip: "10.23.45.10" end 
- 
+
+
+ <img width="393" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/3bf765b6-7a94-4e33-a9fe-22c9896d8073">
+
+
+<img width="646" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/69f20a8f-b43b-4222-8e6d-536bd22d43be">
+
+
+<img width="299" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/7dc3f514-8018-4727-b626-6a1c8892b028">
+
+
+<img width="372" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/8b0bb8e5-d3f9-4371-a711-664275f87c79">
+
+
+<img width="476" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/d7acbbf2-6238-47d4-8e9f-9d61a86443da">
+
+
+exit the server and vi into vagrantfile, change the hostname with config.vm.hostname = "myfirstvm" save and quit, 
+
+<img width="476" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/f4af02aa-e84c-4c29-b1d0-dd0a70954a5a">
+
+
+reload server with "vagrant reload"
+
+<img width="535" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/2e912926-9b16-43b8-b4ca-57a44ebc6b4a">
+
+
+ssh into the server with "vagrant ssh" and do "hostname" to see if the name has changed
+
+<img width="535" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/56366f0a-f2a5-40de-a26c-06c2ad9ae072">
+
+
+<img width="310" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/ad2ed05c-6183-45f0-8287-f42745cc3440">
+
+
+exit the server and assign an ipaddress (10.23.45.10) with config.vm.network "private_network", ip: "10.23.45.10", save and quit then reload
+
+<img width="482" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/3b05dc24-9e29-4653-b6c5-f955b8c018a2">
+
+
+ping the server using ping 10.23.45.10 on another terminal
+
+<img width="436" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/31091027-0b33-4403-b13b-3a3e4ea67cd0">
+
+
+You can pause the server using "vagrant halt" , destroy the server using "vagrant destroy"
+
+<img width="426" alt="image" src="https://github.com/Hardey1774/vagrant-projects/assets/111874994/0ff65b5e-8f31-454a-93d2-1592f50f3947">
+
+D
